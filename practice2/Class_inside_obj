@@ -1,0 +1,24 @@
+class Outer_cls
+{
+    object Inner_obj{
+        def func(){
+            println("Hello")
+        }
+    }
+}
+object Outer_obj
+{
+    class Inner_cls{
+        def func(){
+            println("Hello")
+        }
+    }
+}
+object MyClass {
+
+    def main(args: Array[String]) {
+       new Outer_cls().Inner_obj.func()
+       new Outer_obj.Inner_cls().func()
+    }
+
+}
