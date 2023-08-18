@@ -1,0 +1,28 @@
+
+object MyClass {
+
+    def main(args: Array[String]) {
+        def apply(fname:String,lname:String){
+            fname+"kumar"+lname
+        }
+        def unapply(name:String):Option[(String,String)]
+        {
+            val y = name.split("kumar")
+            if (y.length == 2){
+                Some(y(0),y(1))
+            }
+            if (y.length == 2)
+            {
+                 
+                Some(y(0), y(1))
+             
+            }
+            else{
+                return None
+            }
+        }
+        apply("namratha","mamidisetti")
+        unapply("namrathakumarmamidisetti")
+    }
+
+}
