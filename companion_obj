@@ -1,0 +1,13 @@
+class MyClass{
+    def display()
+    {
+        println("Hello this is demo for companion object")
+    }
+}
+object MyClass {
+
+    def main(args: Array[String]) {
+        val obj = new MyClass()
+        obj.display()
+}
+}
