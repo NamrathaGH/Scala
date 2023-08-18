@@ -1,0 +1,14 @@
+
+object MyClass {
+    def add(x:Int, y:Int,args:Int*):Int={
+        var res= x+y
+        for (arg<-args){
+            res+=arg
+        }
+        return res
+    };
+
+    def main(args: Array[String]) {
+        println(add(24,10,20,30))
+    }
+}
