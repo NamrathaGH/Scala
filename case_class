@@ -1,0 +1,16 @@
+case class Message(sender:String,receiver:String)
+{
+
+}
+object MyClass {
+    def add(x:Int, y:Int) = x + y;
+
+    def main(args: Array[String]) {
+       val msg1 = Message("ssnk","nxiwd")
+       val msg2 = Message("ssnk","nxiwd")
+       val msg3 = msg2.copy(sender="oppiu")
+       val res = (msg1==msg2)
+       print(res)
+       print(msg3)
+}
+}
