@@ -1,0 +1,21 @@
+
+object MyClass {
+
+    def main(args: Array[String]) {
+       val x =3
+       x match{
+           case 0 => print("Zero")
+           case 1 => print("One")
+           case 2 => print("Two")
+           case 3 => print("Three")
+       }
+       println()
+       def matchFunc (x :Int)= x match{
+           case 0 => print("Zero")
+           case 1 => print("One")
+           case 2 => print("Two")
+           case 3 => print("Three")
+       }
+       matchFunc(2)
+}
+}
