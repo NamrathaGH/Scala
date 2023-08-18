@@ -1,0 +1,12 @@
+object Box{
+    def display()
+    {
+        println("Hello this is demo for singleton object")
+    }
+}
+object MyClass {
+
+    def main(args: Array[String]) {
+        Box.display()
+}
+}
