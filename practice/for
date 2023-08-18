@@ -1,0 +1,31 @@
+
+object MyClass {
+
+    def main(args: Array[String]) {
+        for (a<- 0 to 5){
+            print(a)
+        }
+        println()
+        for (b<- 0 until 5){
+            print(b)
+        }
+        println()
+        for (a<- 1 to 3 ; b<- 8 until 10){
+            println(a,b)
+        }
+        val students = List(1,2,3,4)
+        for (i <- students){
+            println(i)
+        }
+        println("with filter")
+        for (i <- students if i>1;if i<4)
+        {
+            println(i);
+        }
+        println("with yield")
+        val res = for (i <- students if i>1;if i<4)
+            yield i
+        res.foreach(println)
+    }
+
+}
