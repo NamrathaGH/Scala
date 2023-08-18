@@ -1,0 +1,9 @@
+
+object MyClass {
+
+    def main(args: Array[String]) {
+        var pattern ="geeks".r
+        var str = "geeksforgeeks"
+        print(pattern findFirstIn  str)
+}
+}
