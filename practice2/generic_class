@@ -1,0 +1,24 @@
+
+object MyClass {
+
+    def main(args: Array[String]) {
+       abstract class Add[A]{
+           def add(x:A,y:A):A
+       }
+       class AddInt extends Add[Int]{
+           def add(x:Int,y:Int):Int ={
+               return x+y
+           }
+       }
+       class AddDouble extends Add[Double]{
+           def add(x:Double,y:Double):Double={
+               return x+y
+           }
+       }
+       val obj1 = new AddInt().add(2,4)
+       println(obj1)
+       val obj2 = new AddDouble().add(2.30,3.40)
+       println(obj2)
+    }
+
+}
