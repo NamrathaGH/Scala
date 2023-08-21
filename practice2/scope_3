@@ -1,0 +1,18 @@
+//Package specific example
+package Test
+class Demo1{
+    private var a:Int = 7
+    private[Test] var b:Int = 8
+    def show(){
+        println("Inside method")
+        println(a)
+        println(b)
+    }
+}
+object MyClass{
+    def main(args: Array[String]) {
+        var obj = new Demo1
+        obj.show()
+        println(b)
+    }
+}
