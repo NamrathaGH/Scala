@@ -1,0 +1,7 @@
+object MyClass{
+    def main(args: Array[String]) {
+        var arr =List(1,10,20,30)
+        var res = arr.filter(x=> (x <20 && x>5) )
+        println(res)
+    }
+}
