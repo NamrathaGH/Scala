@@ -1,0 +1,11 @@
+//Lists are immutable
+object MyClass{
+    def main(args: Array[String]) {
+        var nums =List(1,2,3,4,5)
+        println(nums)
+        println(nums.head)
+        println(nums.tail)
+        println(nums.isEmpty)
+    }
+}
+ 
