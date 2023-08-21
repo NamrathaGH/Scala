@@ -1,0 +1,28 @@
+//Lists are immutable
+object MyClass{
+    def main(args: Array[String]) {
+        var nums =List(1,2,3,4,5)
+        println(nums)
+        println(nums.head)
+        println(nums.tail)
+        println(nums.isEmpty)
+        //concatenation
+        var nums2 =List(6,7,8,9)
+        var res1 = nums ::: nums2
+        var res2 = nums .:::( nums2)
+        var res3 = nums.concat(nums2)
+        println(res1)
+        println(res2)
+        println(res3)
+        //uniform list
+        var arr = List.fill(6)("abc")
+        println(arr)
+        //tabulating using a function
+        var squares = List.tabulate(6)(x=> x*x)
+        println(squares)
+        val squares_rev = squares.reverse
+        println(squares_rev)
+        println(squares)
+    }
+}
+ 
