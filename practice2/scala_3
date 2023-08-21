@@ -1,0 +1,19 @@
+class Demo1{
+    var a :Int =6
+    private var b:Int = 7
+    private[this] var c:Int = 8
+    def show(other:Demo1){
+        println(a)
+        println(b)
+        println(c)
+        println(other.a)
+        println(other.b)
+        //println(other.c)//error
+    }
+}
+object MyClass{
+    def main(args: Array[String]) {
+        var obj = new Demo1
+        obj.show(obj)
+    }
+}
