@@ -1,0 +1,12 @@
+object MyClass{
+    def main(args: Array[String]) {
+        var a =10
+        implicit var b = 3
+        def mul(implicit c:Int)= a*c
+        var res1 =mul(5)
+        var res2 =mul
+        println(res1)
+        println(res2)
+    }
+}
+ 
