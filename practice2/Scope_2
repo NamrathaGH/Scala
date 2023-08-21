@@ -1,0 +1,17 @@
+package Test1{
+    class Demo1{
+        var a :Int =5
+        protected var c:Int = 8
+    }
+}
+package Test2{
+    import Test1._
+    object MyClass{
+   
+        def main(args: Array[String]) {
+        var obj = new Demo1
+        println(obj.a)
+        println(obj.c)//error
+        }
+    }
+}
