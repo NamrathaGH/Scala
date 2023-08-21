@@ -1,0 +1,11 @@
+object MyClass{
+    def main(args: Array[String]) {
+        var arr1 =List(1,10,20,30)
+        var res1 = arr1.headOption
+        var arr2 = List()
+        var res2 = arr2.headOption
+        println(res1)
+        println(res2)
+    }
+}
+ 
