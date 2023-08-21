@@ -1,0 +1,22 @@
+trait Test{
+    def show(){
+        println("show in trait")
+    }
+    def display();
+}
+class Mycls extends Test{
+    override def show(){
+        println("Show in my class")
+    }
+    def display(){
+        println("This is display in myclass")
+    }
+}
+object MyClass{
+    def main(args: Array[String]) {
+        var obj = new Mycls()
+        obj.show()
+        obj.display()
+    }
+}
+ 
