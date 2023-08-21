@@ -1,0 +1,17 @@
+class Scope_Demo{
+    var a :Int =5
+    private var b: Int =6
+    protected var c:Int = 8
+}
+object MyClass extends Scope_Demo{
+   
+    def main(args: Array[String]) {
+        var a =10
+        var obj = new Scope_Demo
+        println(obj.a)
+        //println(obj.b) error
+        println(c)
+        println(a)
+        
+    }
+}
