@@ -1,0 +1,10 @@
+object MyClass{
+    def main(args: Array[String]) {
+        var arr = Seq("Namratha","Mamidisetti")
+        var res1 = arr.map(_.toUpperCase)
+        var res2 = res1.flatten
+        println(res2)
+        var res = arr.flatMap(_.toUpperCase)
+        println(res)
+    }
+}
