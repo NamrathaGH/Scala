@@ -1,0 +1,11 @@
+
+object MyClass {
+    def add(x:Int, y:Int) = x + y;
+
+    def main(args: Array[String]) {
+        var arr = List(1,2,3,4,5,6)
+        var (res1,res2)= arr.partition(x => {x%3==0})
+        println(res1)
+        println(res2)
+    }
+}
